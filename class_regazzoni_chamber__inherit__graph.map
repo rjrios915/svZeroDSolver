@@ -1,0 +1,5 @@
+<map id="RegazzoniChamber" name="RegazzoniChamber">
+<area shape="rect" id="Node000001" title="Cardiac chamber with elastance and inductor." alt="" coords="5,79,138,105"/>
+<area shape="rect" id="Node000002" href="$class_block.html" title="Base class for 0D model components." alt="" coords="44,5,99,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,46,74,79,69,79,69,46"/>
+</map>
