@@ -28,7 +28,7 @@
 # NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-cmake_minimum_required(VERSION 4.0)
+cmake_minimum_required(VERSION 3.5)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
@@ -101,7 +101,7 @@ FetchContent_Declare(
     GIT_TAG        master
 )
 
-FetchContent_GetProperties(pybind11)
+FetchContent_MakeAvailable(pybind11) 
 
 if(NOT pybind11_POPULATED)
     FetchContent_Populate(pybind11)
