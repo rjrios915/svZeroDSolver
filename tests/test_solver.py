@@ -61,7 +61,7 @@ def test_solver(testfile):
     results_dir = os.path.join(this_file_dir, 'cases', 'results')
 
     if testfile in EXPECTED_FAILURES:
-        pytest.xfail(reason=f"Known failure for test case: {testfile}")
+        pytest.xfail(reason=f"A known failure for test case: {testfile}")
 
     ref = pd.read_json(os.path.join(results_dir, f'result_{testfile}'))
 
