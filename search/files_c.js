@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['regazzonichamber_2eh_0',['RegazzoniChamber.h',['../_regazzoni_chamber_8h.html',1,'']]],
-  ['regazzonivalve_2eh_1',['RegazzoniValve.h',['../_regazzoni_valve_8h.html',1,'']]],
-  ['resistancebc_2eh_2',['ResistanceBC.h',['../_resistance_b_c_8h.html',1,'']]],
-  ['resistivejunction_2eh_3',['ResistiveJunction.h',['../_resistive_junction_8h.html',1,'']]]
+  ['simulationparameters_2eh_0',['SimulationParameters.h',['../_simulation_parameters_8h.html',1,'']]],
+  ['solver_2eh_1',['Solver.h',['../_solver_8h.html',1,'']]],
+  ['sparsesystem_2eh_2',['SparseSystem.h',['../_sparse_system_8h.html',1,'']]],
+  ['state_2eh_3',['State.h',['../_state_8h.html',1,'']]]
 ];

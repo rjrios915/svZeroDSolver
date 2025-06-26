@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kungventricle_0',['KungVentricle',['../class_kung_ventricle.html',1,'']]]
+  ['levenbergmarquardtoptimizer_0',['LevenbergMarquardtOptimizer',['../class_levenberg_marquardt_optimizer.html',1,'']]]
 ];

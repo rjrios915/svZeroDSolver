@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['parameter_0',['Parameter',['../class_parameter.html',1,'']]],
-  ['pressurereferencebc_1',['PressureReferenceBC',['../class_pressure_reference_b_c.html',1,'']]]
+  ['resistancebc_0',['ResistanceBC',['../class_resistance_b_c.html',1,'']]],
+  ['resistivejunction_1',['ResistiveJunction',['../class_resistive_junction.html',1,'']]]
 ];

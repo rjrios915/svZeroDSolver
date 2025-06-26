@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tripletscontributions_0',['TripletsContributions',['../struct_triplets_contributions.html',1,'']]]
+  ['valvetanh_0',['ValveTanh',['../class_valve_tanh.html',1,'']]]
 ];

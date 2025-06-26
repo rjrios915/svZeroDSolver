@@ -332,68 +332,22 @@ node[ground]{$\hat{P}$};
 \]
 \_form#80=77x36:\[\mathbf{C}^{e}=\left[\hat{P}\right]
 \]
-\_form#81=212x62:\[\begin{circuitikz} \draw
-node[left] {$Q_{in}$} [-latex] (0,0) -- (0.8,0);
-\draw (1,0) node[anchor=south]{$P_{in}$}
-to [D, l=$R_v$, *-*] (3,0)
-node[anchor=south]{$P_{out}$};
-\end{circuitikz}
-\]
-\_form#82=617x47:\[P_{in}-P_{out}-Q_{in}\left[R_{min} +
-(R_{max}-R_{min})\frac{1}{2}\left[1+tanh\{k(P_{out}-P{in})\}\right]\right]=0
-\]
-\_form#83=126x19:\[Q_{in}-Q_{out}=0
-\]
-\_form#84=278x28:\[\mathbf{y}^{e}=\left[\begin{array}{llll}P_{in} & Q_{in} &
-P_{out} & Q_{out}\end{array}\right]^{T} \]
-\_form#85=174x47:\[\mathbf{E}^{e}=\left[\begin{array}{cccc}
-0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0
-\end{array}\right]
-\]
-\_form#86=366x47:\[\mathbf{F}^{e}=\left[\begin{array}{cccc}
-1 & -(R_{max}+R_{min})/2.0 & -1 & 0 \\
-0 &      1                 &  0 & -1
-\end{array}\right]
-\]
-\_form#87=426x47:\[\mathbf{c}^{e}=\left[\begin{array}{c}
--\frac{1}{2}Q_{in}(R_{max}-R_{min})tanh\{k(P_{out}-P_{in})\} \\
-0
-\end{array}\right]
-\]
-\_form#88=229x49:\[\left(\frac{\partial\mathbf{c}}{\partial\mathbf{y}}\right)^{e} =
-\left[\begin{array}{cccc}
-A & B & C & 0 \\
-0 & 0 & 0 & 0 \end{array}\right] \]
-\_form#89=443x39:\[A = \frac{1}{2} k Q_{in}
-(R_{max}-R_{min})\left[1-tanh^2\{k(P_{out}-P_{in})\}\right] \\
-\]
-\_form#90=362x39:\[B = -\frac{1}{2}(R_{max}-R_{min})tanh\{k(P_{out}-P_{in})\} \\
-\]
-\_form#91=458x39:\[C = -\frac{1}{2} k Q_{in}
-(R_{max}-R_{min})\left[1-tanh^2\{k(P_{out}-P_{in})\}\right] \]
-\_form#92=212x49:\[\left(\frac{\partial\mathbf{c}}{\partial\dot{\mathbf{y}}}\right)^{e} =
-\left[\begin{array}{cccc}
-0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0
-\end{array}\right]
-\]
-\_form#93=208x45:\[\begin{circuitikz} \draw
+\_form#81=208x45:\[\begin{circuitikz} \draw
 node[left] {$Q_{in}$} [-latex] (0,0) -- (0.8,0);
 \draw (1.0,0) node[anchor=south]{$P_{in}$}
 to [R, l=$R$, *-*] (3,0)
 node[anchor=south]{$P_{d}$};
 \end{circuitikz}
 \]
-\_form#94=154x19:\[P_{in}-P_d=R \cdot Q_{in}
+\_form#82=154x19:\[P_{in}-P_d=R \cdot Q_{in}
 \]
-\_form#95=167x28:\[\mathbf{y}^{e}=\left[\begin{array}{ll}P_{in} & Q_{in}\end{array}\right]^{T}
+\_form#83=167x28:\[\mathbf{y}^{e}=\left[\begin{array}{ll}P_{in} & Q_{in}\end{array}\right]^{T}
 \]
-\_form#96=135x24:\[\mathbf{F}^{e}=\left[\begin{array}{ll}1 & -R\end{array}\right]
+\_form#84=135x24:\[\mathbf{F}^{e}=\left[\begin{array}{ll}1 & -R\end{array}\right]
 \]
-\_form#97=92x21:\[\mathbf{C}^{e}=\left[-P_d\right]
+\_form#85=92x21:\[\mathbf{C}^{e}=\left[-P_d\right]
 \]
-\_form#98=396x171:\[  \begin{circuitikz}
+\_form#86=396x171:\[  \begin{circuitikz}
   \draw [-latex] (0.25,1.4) node[left] {$Q_{in,1}$} -- (0.85,1.1);
   \draw [-latex] (0.25,-1.4) node[left] {$Q_{in,1}$} -- (0.85,-1.1);
   \draw (1,1.0) node[anchor=south]{$P_{in,1}$} to [R, , l=$R_{in,1}$, *-*]
@@ -407,25 +361,71 @@ node[anchor=south]{$P_{d}$};
   {$Q_{out,1}$}; \draw [-latex] (5.15,-1.1) -- (5.75,-1.4) node[right]
   {$Q_{out,2}$}; \end{circuitikz}
 \]
-\_form#99=218x56:\[  \sum_{i}^{n_{inlets}} Q_{in, i}=\sum_{j}^{n_{outlets}} Q_{out, j}
+\_form#87=218x56:\[  \sum_{i}^{n_{inlets}} Q_{in, i}=\sum_{j}^{n_{outlets}} Q_{out, j}
 \]
-\_form#100=311x21:\[  P_{in,i}-P_{C}=R_{in,i} \cdot Q_{in,i}\quad \forall i\in n_{inlets}
+\_form#88=311x21:\[  P_{in,i}-P_{C}=R_{in,i} \cdot Q_{in,i}\quad \forall i\in n_{inlets}
 \]
-\_form#101=347x21:\[  P_{C}-P_{out,j}=R_{out,j} \cdot Q_{out,j}\quad \forall j\in n_{outlets}
+\_form#89=347x21:\[  P_{C}-P_{out,j}=R_{out,j} \cdot Q_{out,j}\quad \forall j\in n_{outlets}
 \]
-\_form#102=684x24:\[  \mathbf{y}^{e}=\left[\begin{array}{lllllllllll}P_{in, 1}^{e} & Q_{in, 1}^{e}
+\_form#90=684x24:\[  \mathbf{y}^{e}=\left[\begin{array}{lllllllllll}P_{in, 1}^{e} & Q_{in, 1}^{e}
   & \dots & P_{in, i}^{e} & Q_{in, i}^{e} & P_{out, 1}^{e} & Q_{out, 1}^{e} &
   \dots & P_{out, i}^{e} & Q_{out, i}^{e} & P_{C}\end{array}\right] \]
-\_form#103=428x24:\[  \mathbf{F}^{e}_1 = \left[\begin{array}{lllllllllll}0 & 1 & 0 & 1 & \dots & 0
+\_form#91=428x24:\[  \mathbf{F}^{e}_1 = \left[\begin{array}{lllllllllll}0 & 1 & 0 & 1 & \dots & 0
   & -1 & 0 & -1 & \dots & 0\end{array}\right] \]
-\_form#104=531x58:\[ \mathbf{F}^{e}_{2,...,n} = \left[\begin{array}{lllll}\dots &
+\_form#92=531x58:\[ \mathbf{F}^{e}_{2,...,n} = \left[\begin{array}{lllll}\dots &
   \underbrace{1}_{P_{in,i}} & \underbrace{-R_{in,i}}_{Q_{in,i}} & \dots &
   \underbrace{-1}_{P_{C}}\end{array}\right] \quad \mathrm{with} \quad \forall
   i\in n_{inlets}  \]
-\_form#105=551x58:\[ \mathbf{F}^{e}_{2,...,n} = \left[\begin{array}{lllll}\dots &
+\_form#93=551x58:\[ \mathbf{F}^{e}_{2,...,n} = \left[\begin{array}{lllll}\dots &
   \underbrace{-1}_{P_{out,j}} & \underbrace{-R_{out,j}}_{Q_{out,j}} & \dots &
   \underbrace{1}_{P_{C}}\end{array}\right] \quad \mathrm{with} \quad \forall
   j\in n_{oulets}  \]
+\_form#94=212x62:\[\begin{circuitikz} \draw
+node[left] {$Q_{in}$} [-latex] (0,0) -- (0.8,0);
+\draw (1,0) node[anchor=south]{$P_{in}$}
+to [D, l=$R_v$, *-*] (3,0)
+node[anchor=south]{$P_{out}$};
+\end{circuitikz}
+\]
+\_form#95=617x47:\[P_{in}-P_{out}-Q_{in}\left[R_{min} +
+(R_{max}-R_{min})\frac{1}{2}\left[1+tanh\{k(P_{out}-P{in})\}\right]\right]=0
+\]
+\_form#96=126x19:\[Q_{in}-Q_{out}=0
+\]
+\_form#97=278x28:\[\mathbf{y}^{e}=\left[\begin{array}{llll}P_{in} & Q_{in} &
+P_{out} & Q_{out}\end{array}\right]^{T} \]
+\_form#98=174x47:\[\mathbf{E}^{e}=\left[\begin{array}{cccc}
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{array}\right]
+\]
+\_form#99=366x47:\[\mathbf{F}^{e}=\left[\begin{array}{cccc}
+1 & -(R_{max}+R_{min})/2.0 & -1 & 0 \\
+0 &      1                 &  0 & -1
+\end{array}\right]
+\]
+\_form#100=426x47:\[\mathbf{c}^{e}=\left[\begin{array}{c}
+-\frac{1}{2}Q_{in}(R_{max}-R_{min})tanh\{k(P_{out}-P_{in})\} \\
+0
+\end{array}\right]
+\]
+\_form#101=229x49:\[\left(\frac{\partial\mathbf{c}}{\partial\mathbf{y}}\right)^{e} =
+\left[\begin{array}{cccc}
+A & B & C & 0 \\
+0 & 0 & 0 & 0 \end{array}\right] \]
+\_form#102=443x39:\[A = \frac{1}{2} k Q_{in}
+(R_{max}-R_{min})\left[1-tanh^2\{k(P_{out}-P_{in})\}\right] \\
+\]
+\_form#103=362x39:\[B = -\frac{1}{2}(R_{max}-R_{min})tanh\{k(P_{out}-P_{in})\} \\
+\]
+\_form#104=458x39:\[C = -\frac{1}{2} k Q_{in}
+(R_{max}-R_{min})\left[1-tanh^2\{k(P_{out}-P_{in})\}\right] \]
+\_form#105=212x49:\[\left(\frac{\partial\mathbf{c}}{\partial\dot{\mathbf{y}}}\right)^{e} =
+\left[\begin{array}{cccc}
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{array}\right]
+\]
 \_form#106=321x144:\[\begin{circuitikz} \draw
 node[left] {$Q_{in}$} [-latex] (0,0) -- (0.8,0);
 \draw (1,0) node[anchor=south]{$P_{in}$}
