@@ -27,6 +27,7 @@ Model::Model() {
       {"RCR", block_factory<WindkesselBC>()},
       {"RESISTANCE", block_factory<ResistanceBC>()},
       {"resistive_junction", block_factory<ResistiveJunction>()},
+      {"ResistanceBlock", block_factory<ResistanceBlock>()},
       {"ValveTanh", block_factory<ValveTanh>()},
       {"ChamberElastanceInductor", block_factory<ChamberElastanceInductor>()}};
 }

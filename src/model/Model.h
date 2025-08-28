@@ -33,6 +33,7 @@
 #include "Parameter.h"
 #include "PressureReferenceBC.h"
 #include "ResistanceBC.h"
+#include "ResistanceBlock.h"
 #include "ResistiveJunction.h"
 #include "State.h"
 #include "ValveTanh.h"
